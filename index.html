@@ -7,9 +7,14 @@
 <link href="css/bootstrap.css" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet">
 <link href="css/responsive.css" rel="stylesheet">
+<link href="css/twentytwenty-no-compass.css" rel="stylesheet">
+<link href="css/twentytwenty.css" rel="stylesheet">
 
 <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 <link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+<script src="https://cdn.knightlab.com/libs/juxtapose/latest/js/juxtapose.min.js"></script>
+<link rel="stylesheet" href="https://cdn.knightlab.com/libs/juxtapose/latest/css/juxtapose.css">
 
 <!-- Responsive -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,6 +22,9 @@
 
 <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
 <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+
+
+
 </head>
 
 <body>
@@ -160,7 +168,7 @@
         </div>
     </section>
     <!--End Main Slider-->
-
+    
     <!-- Portfolio -->
     <section class="our-projects">
         <div class="auto-container">
@@ -427,6 +435,17 @@
         </div>
     </section>
 
+
+<!-- Juxtapose -->
+<div class="auto-container">
+    <div id="container1">
+        <img src="images\slider\1-1.jpg">
+        <img src="images\slider\2-2.jpg">
+      </div>
+</div>
+
+
+
     <!-- Testimonial Section -->
     <section class="testimonial-section sp-two">
         <div class="auto-container">
@@ -687,7 +706,17 @@
 <script src="js/TweenMax.min.js"></script>
 <script src="js/TweenMax.min.js"></script>
 <script src="js/script.js"></script>
+<script src="js/jquery.twentytwenty.js"></script>
+<script src="js/jquery.event.move.js"></script>
 
+<!--Call twentytwenty-->
+<script>
+    
+    $(window).load(function() {
+  $("#container1").twentytwenty();
+});
+
+</script>
 <!--Google Map APi Key-->
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBk25E4mNfVIEt3tNl3K1HwNZVruVoFBlA"></script>
 <script src="js/map-script.js"></script>
