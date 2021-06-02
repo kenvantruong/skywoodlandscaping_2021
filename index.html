@@ -436,11 +436,19 @@
     </section>
 
 
-<!-- Juxtapose -->
-<div class="auto-container">
+  <!-- Juxtapose -->
+  <div class="auto-container">
     <div id="container1">
         <img src="images\slider\1-1.jpg">
         <img src="images\slider\2-2.jpg">
+      </div>
+</div>    
+    
+    <!-- Juxtapose -->
+<div class="auto-container">
+    <div id="container2">
+        <img src="images\slider\flagstone1-1.jpg">
+        <img src="images\slider\flagstone2-2.jpg">
       </div>
 </div>
 
@@ -715,8 +723,13 @@
     $(window).load(function() {
   $("#container1").twentytwenty();
 });
+    
+    $(window).load(function() {
+  $("#container2").twentytwenty();
+});
 
 </script>
+
 <!--Google Map APi Key-->
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBk25E4mNfVIEt3tNl3K1HwNZVruVoFBlA"></script>
 <script src="js/map-script.js"></script>
